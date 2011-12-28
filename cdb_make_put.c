@@ -6,7 +6,12 @@
  */
 
 #include <stdlib.h>
+#ifdef _MSC_VER
+#include <io.h>
+#define SEEK_SET 0 // Normally defined by mmsystem.h, which is just silly.
+#else
 #include <unistd.h>
+#endif
 #include <assert.h>
 #include "cdb_int.h"
 

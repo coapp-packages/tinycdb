@@ -5,7 +5,11 @@
  * Public domain.
  */
 
+#ifdef _MSC_VER
+#include <io.h>
+#else
 #include <unistd.h>
+#endif
 #include "cdb_int.h"
 
 #ifndef SEEK_SET
