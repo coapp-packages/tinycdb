@@ -6,6 +6,7 @@ EXPORTS
 	cdb_pack
 	cdb_init
 	cdb_free
+	cdb_read
 	cdb_get
 	cdb_find
 	cdb_findinit
